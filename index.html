@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="uk"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Для себе – навчіться купувати з Китаю самостійно</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:Evolventa;font-weight:400;font-style:normal;font-display:swap;src:url(fonts/evolventa-regular.woff) format('woff')}
+@font-face{font-family:Evolventa;font-weight:700;font-style:normal;font-display:swap;src:url(fonts/evolventa-bold.woff) format('woff')}
+
+:root{--pink:#fdb5db;--ink:#111;--bg:#fff;--soft:#fee9f4;--muted:#555;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#fff;--ink:#111}}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Evolventa,Montserrat,Arial,sans-serif;font-synthesis:none;font-weight:400;line-height:1.55;font-size:17px}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}
+h1,h2{font-weight:700;line-height:1.08;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(28px,4.6vw,52px);text-transform:uppercase;line-height:1.12}
+h2{font-size:clamp(28px,4.4vw,44px);color:var(--pink)}
+mark{background:var(--pink);color:var(--ink);padding:.02em .25em;border-radius:3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.btn{display:inline-block;background:var(--pink);color:var(--ink);font-weight:700;text-decoration:none;padding:16px 28px;border-radius:999px;font-size:17px;border:2px solid var(--ink)}
+.btn:hover{background:var(--ink);color:var(--pink)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.hero{padding:0}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:end;min-height:min(86vh,760px)}
+.hero .txt{padding:56px 0}
+.hero p{font-size:20px;max-width:30ch;margin:0 0 28px}
+.hero .ph{align-self:end}
+.hero .ph img{border-radius:240px 240px 0 0;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top;background:var(--pink)}
+.about{background:var(--pink)}
+.about .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center}
+.about h2{color:var(--ink)}
+.bubble{background:#fff;border-radius:26px 26px 26px 4px;padding:22px 26px;font-weight:700;font-size:20px;margin:0 0 22px}
+.about img{border-radius:22px;aspect-ratio:6/5;width:100%;object-fit:cover;object-position:top}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.two img{border-radius:6px;transform:rotate(-2deg);box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.two.rev img{transform:rotate(2deg)}
+ul.dash{list-style:none;margin:0;padding:0;font-weight:700}
+ul.dash li{padding:10px 0 10px 34px;position:relative}
+ul.dash li::before{content:"–";position:absolute;left:0;color:var(--pink);font-weight:700}
+.apps{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.apps span{background:var(--soft);border:2px solid var(--pink);border-radius:999px;padding:7px 16px;font-weight:700;font-size:15px}
+.flow{display:flex;flex-wrap:wrap;gap:12px 8px;align-items:center;margin:30px 0}
+.flow b{background:var(--pink);padding:10px 20px;border-radius:999px;font-weight:700}
+.flow i{font-style:normal;font-weight:700;font-size:22px}
+.lead{font-weight:700;font-size:clamp(20px,3vw,28px);margin:0 0 18px}
+.base{background:var(--ink);color:#fff}
+.base .wrap{max-width:760px}
+.base p{font-size:19px}
+.result .flow b{background:#fff;border:2px solid var(--pink)}
+.proof{background:var(--soft)}
+.big{font-size:clamp(56px,10vw,110px);font-weight:700;color:var(--pink);line-height:1;margin:0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:30px;padding:0;list-style:none}
+.cards li{background:#fff;border-radius:18px;padding:20px 22px;font-weight:700;border:2px solid var(--pink)}
+.cards b{display:block;color:var(--ink);font-size:18px;margin-bottom:2px}
+.cta{background:var(--pink);text-align:center}
+.cta h2{color:var(--ink)}
+.cta p{font-size:19px;margin:0 auto 28px;max-width:34ch}
+.cta .btn{background:var(--ink);color:#fff}
+.cta .btn:hover{background:#fff;color:var(--ink)}
+footer{padding:26px 0;text-align:center;font-size:14px;color:var(--muted)}
+@media (max-width:760px){
+ section{padding:52px 0}
+ .hero .wrap,.about .wrap,.two{grid-template-columns:1fr;gap:28px}
+ .hero .wrap{min-height:0}
+ .hero .txt{padding:40px 0 0}
+ .hero .ph{max-width:360px;margin:0 auto;width:100%}
+ .about img{max-width:340px;margin:0 auto}
+ .two img{max-width:420px;margin:0 auto}
+}
+.two img{border-radius:22px;transform:none!important;box-shadow:none;width:100%;aspect-ratio:4/5;object-fit:cover}
+.base{position:relative;background:var(--ink) url("images/dark-block-background.jpg") center/cover no-repeat}
+.base::before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.62)}
+.base .wrap{position:relative}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.gal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px}
+.cta .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:44px;align-items:center;text-align:left}
+.cta .wrap img{border-radius:240px 240px 22px 22px;width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top}
+.cta p{margin:0 0 28px;max-width:34ch}
+@media (max-width:760px){.gal{grid-template-columns:repeat(2,1fr)}.cta .wrap{grid-template-columns:1fr;text-align:center}.cta .wrap img{max-width:320px;margin:0 auto}.cta p{margin-left:auto;margin-right:auto}}
+.steps{background:#fff}
+.steps .wrap{text-align:center}
+.steps .stage{position:relative;max-width:760px;margin:26px auto 34px;aspect-ratio:960/740;container-type:inline-size}
+.stage .arr{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.stage .ic{position:absolute;height:auto}
+.stage .lb{position:absolute;color:var(--pink);font-weight:700;font-size:4.8cqw;line-height:1;white-space:nowrap}
+.steps .stx{max-width:56ch;margin:0 auto 14px}
+.steps .lead{margin-bottom:0}
+.hero .txt{text-align:center}
+.hero p{margin:0 auto 28px}
+.steps .wrap{text-align:left;display:grid;grid-template-columns:.85fr 1.15fr;gap:0 48px;align-content:center;align-items:center}
+.steps .wrap>*{grid-column:1;margin-top:0}
+.steps .wrap>.stage{grid-column:2;grid-row:1/span 4;margin:0 auto;width:100%}
+.steps .stx{margin:0 0 14px;max-width:44ch}
+.steps .lead{margin:0 0 22px}
+.girls{list-style:none;margin:28px 0 0;padding:0;display:grid;gap:12px;max-width:800px}
+.girls li{background:#fff;border:2px solid var(--pink);border-radius:20px;overflow:hidden}
+.girls summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;font-weight:700}
+.girls summary::-webkit-details-marker{display:none}
+.girls summary:focus-visible{outline:3px solid var(--ink);outline-offset:-3px}
+.girls b{font-weight:700;font-size:18px}
+.pm{flex:none;width:36px;height:36px;border-radius:50%;background:var(--pink);position:relative;transition:transform .25s}
+.pm::before,.pm::after{content:"";position:absolute;left:50%;top:50%;width:16px;height:2.5px;margin:-1.25px 0 0 -8px;background:var(--ink);border-radius:2px}
+.pm::after{transform:rotate(90deg)}
+details[open] .pm{transform:rotate(45deg)}
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;padding:4px 20px 20px}
+.shots img{width:100%;border-radius:12px;cursor:zoom-in;background:#eee}
+#lb{border:0;padding:0;background:transparent;max-width:94vw;max-height:94vh}
+#lb::backdrop{background:rgba(0,0,0,.82)}
+#lb img{display:block;max-width:94vw;max-height:94vh;border-radius:12px;cursor:zoom-out}
+@media (prefers-reduced-motion:reduce){.pm{transition:none}}
+@media (max-width:760px){.steps .wrap{display:block}.steps .wrap>.stage{margin:22px auto 26px}}
+.about img{aspect-ratio:4/5!important;object-position:center 15%}
+.cta .price{font-weight:700;font-size:clamp(22px,3.2vw,30px);max-width:none;margin:0 0 22px}
+.cta .ask{margin-top:34px}
+.cta .ask p{font-size:17px;margin:0 0 14px}
+.cta .btn.ghost{background:transparent;color:var(--ink);padding:12px 24px;margin:0 8px 8px 0;font-size:16px}
+.cta .btn.ghost:hover{background:var(--ink);color:#fff}
+@media (max-width:760px){.cta .btn.ghost{margin:0 4px 8px}}
+.steps,.galsec{padding-top:0}
+.cta .price{line-height:1.5}
+.cta .pr{display:inline-block;background:var(--ink);color:#fff;padding:.02em .5em;border-radius:999px;white-space:nowrap}
+.cta mark{background:#fff;color:var(--ink);padding:.05em .4em;border-radius:999px;font-weight:700}
+.cta .ask p{font-size:20px;font-weight:700;max-width:none}
+.cta mark{white-space:nowrap}
+.cta mark{background:transparent;color:var(--ink);padding:0;border-radius:0;text-transform:uppercase;letter-spacing:.05em;font-size:22px;font-weight:700}
+.cta .ask p{margin:0 0 14px}
+@media (min-width:761px){.cta .wrap{grid-template-columns:minmax(0,380px) auto;justify-content:center;gap:40px;text-align:left}}
+@media (max-width:760px){.cta .wrap{gap:18px}}
+.cta mark{background:#fff;color:var(--ink);padding:.15em .75em;border-radius:999px;text-transform:none;letter-spacing:0;font-size:20px;font-weight:700;display:inline-block}
+.cta .wv{display:block;width:84px;height:64px;margin:4px 0 8px 40px;color:var(--ink);overflow:visible}
+@media (max-width:760px){.cta .wv{margin:4px auto 8px}}
+.hero .btn{padding:15px 26px}
+.mb{display:none}
+@media (max-width:760px){.mb{display:inline}}
+</style></head><body>
+
+<header class="hero"><div class="wrap">
+ <div class="txt">
+  <h1>Досі замовляєте з Китаю через баєрів?</h1>
+  <p>Навчіться купувати <mark>самостійно</mark> – у тих самих постачальників, без комісії за&nbsp;викуп&nbsp;🤍</p>
+  <a class="btn" style="text-align:center;line-height:1.3" href="https://secure.wayforpay.com/button/b4ca1570d5704" target="_blank" rel="noopener">Приєднатись до навчання<br class="mb"> за&nbsp;280$</a>
+ </div>
+ <div class="ph"><img src="images/hero-olena.jpg" alt="Олена з сумкою"></div>
+</div></header>
+
+<section class="about"><div class="wrap">
+ <div><img src="images/about-olena.jpg" alt="Олена із сумкою Chanel" loading="lazy"></div>
+ <div>
+  <h2>Я – Олена, баєр у Китаї&nbsp;🇨🇳</h2>
+  <p class="bubble">«А можна навчитися замовляти самостійно й купувати ту саму якість, що й у тебе?»</p>
+  <p>Це запитання я часто чула від клієнтів. Саме вони стали моїми першими учнями.</p>
+  <p>Так з’явився курс <mark><b>«Для себе»</b></mark> – для тих, хто хоче сам обирати, замовляти та розуміти, за що платить.</p>
+ </div>
+</div></section>
+
+<section><div class="wrap two">
+ <div>
+  <h2>Цей курс для вас, якщо ви:</h2>
+  <ul class="dash">
+   <li>часто купуєте одяг, сумки та взуття;</li>
+   <li>хочете бачити ціни постачальників;</li>
+   <li>любите знаходити цікаві речі в Instagram і Pinterest;</li>
+   <li>хочете обирати з більшого асортименту;</li>
+   <li>прагнете замовляти для себе без комісії баєра.</li>
+  </ul>
+ </div>
+ <img src="images/showroom-bags-shelf.jpg" alt="Вітрина з сумками" loading="lazy">
+</div></section>
+
+<section style="padding-top:0"><div class="wrap two rev">
+ <img src="images/chanel-bag-showroom.jpg" alt="Сумка Chanel у бутіку" loading="lazy">
+ <div>
+  <h2>Я покажу:</h2>
+  <ul class="dash">
+   <li>де купують китайці, баєри та шоуруми;</li>
+   <li>як зареєструватися в потрібних додатках;</li>
+   <li>як знаходити речі за фото;</li>
+   <li>як уточнювати якість, матеріали та розміри;</li>
+   <li>як оформлювати й оплачувати замовлення;</li>
+   <li>як організувати перевірку товару та доставку.</li>
+  </ul>
+  <div class="apps" aria-label="Додатки на курсі"><span>WeChat</span><span>Alipay</span><span>Taobao</span><span>Pinduoduo</span><span>Poizon</span></div>
+ </div>
+</div></section>
+
+<section class="steps"><div class="wrap">
+ <h2>Від першої реєстрації до власного замовлення&nbsp;📦</h2>
+ <p class="lead">Разом пройдемо всі кроки:</p>
+ <div class="stage" role="img" aria-label="Реєстрація, пошук, замовлення, оплата, перевірка, доставка"><svg class="arr" viewBox="0 0 960 740" aria-hidden="true"><defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="#fdb5db" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<g fill="none" stroke="#fdb5db" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ah)">
+<path d="M222 95 C250 45 300 40 305 85 C310 130 330 165 385 190"/>
+<path d="M525 195 C575 150 640 185 640 225 C640 255 665 275 700 295"/>
+<path d="M700 430 C640 470 560 430 485 395"/>
+<path d="M300 345 C250 345 215 385 190 420"/>
+<path d="M270 585 C320 625 375 605 425 610"/></g></svg><span class="lb" style="left:0.00%;top:1.35%">Реєстрація</span><img class="ic" style="left:6.25%;top:8.78%;width:15.62%" src="images/step-registration.png" alt=""><span class="lb" style="left:41.67%;top:16.22%">пошук</span><img class="ic" style="left:41.15%;top:22.97%;width:16.15%" src="images/step-search.png" alt=""><span class="lb" style="left:70.31%;top:41.89%">замовлення</span><img class="ic" style="left:75.52%;top:47.97%;width:18.23%" src="images/step-order.png" alt=""><span class="lb" style="left:32.29%;top:43.24%">оплата</span><img class="ic" style="left:33.33%;top:49.32%;width:15.62%" src="images/step-payment.png" alt=""><span class="lb" style="left:6.04%;top:59.46%">перевірка</span><img class="ic" style="left:5.21%;top:66.22%;width:21.88%" src="images/step-check.png" alt=""><span class="lb" style="left:45.00%;top:77.70%">доставка</span><img class="ic" style="left:45.31%;top:84.46%;width:25.00%" src="images/step-delivery.png" alt=""></div>
+ <p class="stx">Розберемо, що запитати у продавця, на що звернути увагу перед оплатою та що перевірити до відправлення з Китаю.</p>
+ <p class="stx">Також поділюся надійними варіантами доставки з Китаю в Україну та інші країни.</p>
+</div></section>
+
+<section class="base"><div class="wrap">
+ <h2>Вам не доведеться шукати все з нуля&nbsp;🤍</h2>
+ <p>Ви отримаєте <mark>мою базу перевірених постачальників</mark>, у яких я замовляю для себе та клієнтів.</p>
+ <p>Зможете одразу переглядати каталоги, порівнювати ціни та обирати речі під свій смак і бюджет.</p>
+</div></section>
+
+<section class="result"><div class="wrap two">
+ <div>
+  <div class="flow" style="margin-top:0"><b>Побачили річ</b><i>→</i><b>знайшли</b><i>→</i><b>замовили самі</b></div>
+  <h2>Після курсу ви знатимете, як:</h2>
+  <ul class="dash">
+   <li>шукати бажані моделі та альтернативи;</li>
+   <li>обирати розмір і уточнювати якість;</li>
+   <li>рахувати повну вартість із доставкою;</li>
+   <li>купувати напряму, без комісії за викуп.</li>
+  </ul>
+  <p style="margin-top:18px">І зможете використовувати ці знання для кожного наступного замовлення.</p>
+ </div>
+ <img src="images/unboxing-sneakers.jpg" alt="Розпаковка замовлень" loading="lazy">
+</div></section>
+
+<section class="galsec"><div class="wrap"><h2>Мої замовлення&nbsp;📦</h2><div class="gal"><img src="images/hermes-kardyhan-i-prykrasy.jpg" alt="Hermes кардиган і прикраси" loading="lazy"><img src="images/sumka-chanel-i-remin.jpg" alt="Сумка Chanel і ремінь" loading="lazy"><img src="images/sumka-saint-laurent.jpg" alt="Сумка Saint Laurent" loading="lazy"><img src="images/hodynnyk-bvlgari.jpg" alt="Годинник Bvlgari" loading="lazy"><img src="images/chanel-classic-flap.jpg" alt="Chanel Classic Flap" loading="lazy"><img src="images/shovkovi-khustky.jpg" alt="Шовкові хустки" loading="lazy"><img src="images/lofery-ta-miuli.jpg" alt="Лофери та мюлі" loading="lazy"><img src="images/portseliana.jpg" alt="Порцеляна" loading="lazy"></div></div></section>
+
+<section class="proof"><div class="wrap">
+ <p class="big">50+</p>
+ <h2 style="margin-top:8px">дівчат пройшли курс&nbsp;🤍</h2>
+ <p style="max-width:56ch">Багато дівчат тепер самостійно замовляють для себе та більше не переплачують.</p>
+ <p class="lead" style="margin-top:26px">А деякі навіть заробляють на цьому:</p>
+ <ul class="girls">
+<li><details><summary><span><b>Ірина</b> замовляла для себе, а згодом стала баєром.</span><i class="pm" aria-hidden="true"></i></summary><div class="shots"><img src="images/skrinshot-vidhuku-iryna.jpg" alt="Скріншот відгуку: Ірина" loading="lazy"><img src="images/skrinshot-vidhuku-iryna-2.jpg" alt="Скріншот відгуку: Ірина" loading="lazy"><img src="images/skrinshot-vidhuku-iryna-3.jpg" alt="Скріншот відгуку: Ірина" loading="lazy"></div></details></li>
+<li><details><summary><span><b>Дарія</b> була моєю клієнткою й почала працювати баєром.</span><i class="pm" aria-hidden="true"></i></summary><div class="shots"><img src="images/skrinshot-vidhuku-dariia.jpg" alt="Скріншот відгуку: Дарія" loading="lazy"><img src="images/skrinshot-vidhuku-dariia-2.jpg" alt="Скріншот відгуку: Дарія" loading="lazy"><img src="images/skrinshot-vidhuku-dariia-3.jpg" alt="Скріншот відгуку: Дарія" loading="lazy"></div></details></li>
+<li><details><summary><span><b>Катерина</b> відкрила онлайн-магазин.</span><i class="pm" aria-hidden="true"></i></summary><div class="shots"><img src="images/skrinshot-vidhuku-kateryna.jpg" alt="Скріншот відгуку: Катерина" loading="lazy"><img src="images/skrinshot-vidhuku-kateryna-2.jpg" alt="Скріншот відгуку: Катерина" loading="lazy"></div></details></li>
+<li><details><summary><span><b>Ксенія</b> відкрила магазин біжутерії.</span><i class="pm" aria-hidden="true"></i></summary><div class="shots"><img src="images/skrinshot-vidhuku-kseniia.jpg" alt="Скріншот відгуку: Ксенія" loading="lazy"></div></details></li>
+<li><details><summary><span><b>Тамара</b> розширила базу постачальників.</span><i class="pm" aria-hidden="true"></i></summary><div class="shots"><img src="images/skrinshot-vidhuku-tamara.jpg" alt="Скріншот відгуку: Тамара" loading="lazy"></div></details></li>
+<li><details><summary><span><b>Карина</b> розширила асортимент свого існуючого магазину.</span><i class="pm" aria-hidden="true"></i></summary><div class="shots"><img src="images/skrinshot-vidhuku-karyna.jpg" alt="Скріншот відгуку: Карина" loading="lazy"><img src="images/skrinshot-vidhuku-karyna-2.jpg" alt="Скріншот відгуку: Карина" loading="lazy"></div></details></li>
+</ul>
+</div></section>
+
+<section class="cta" id="join"><div class="wrap">
+ <img src="images/contact-olena.jpg" alt="Олена із сумкою Chanel" loading="lazy">
+ <div>
+ 
+ 
+ 
+ <div class="ask">
+  <p><mark>Зв’язатись зі мною</mark></p>
+  <svg class="wv" viewBox="0 0 84 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2C40 8 4 26 34 34S70 44 56 58"/><path d="M67.8 55.9L56 58l2.1-11.8"/></g></svg>
+  <a class="btn ghost" href="https://www.instagram.com/tepla.olena?cplk=c2N4cmVzMjJ6N2o0&amp;utm_source=qr" target="_blank" rel="noopener">Instagram</a>
+  <a class="btn ghost" href="https://t.me/tepla_china_info" target="_blank" rel="noopener">Telegram</a>
+ </div>
+ </div>
+</div>
+</section>
+<dialog id="lb"><img alt=""></dialog>
+
+<script>
+(function(){var d=document.getElementById('lb');if(!d||!d.showModal)return;var im=d.querySelector('img');
+document.addEventListener('click',function(e){var s=e.target;if(s.closest&&s.closest('.shots')&&s.tagName==='IMG'){im.src=s.src;d.showModal();}else if(e.target===d||e.target===im){d.close();}});})();
+</script>
+</body></html>
